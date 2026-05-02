@@ -13,8 +13,8 @@ app.use(morgan("dev"));
 app.use(cors());
 app.use(express.json());
 
-app.use("/backup-images", backupImageRoutes);
-app.use("/dashboard", dashboardRoutes);
+app.use("/", backupImageRoutes);
+app.use("/", dashboardRoutes);
 
 const PORT = process.env.PORT || 8088;
 app.listen(PORT, () => {
