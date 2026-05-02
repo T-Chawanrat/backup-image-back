@@ -1,0 +1,7 @@
+node_modules/
+.env
+image/
+sign/
+*.7z
+*.xlsx
+*.xls
